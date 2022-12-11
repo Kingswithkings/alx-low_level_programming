@@ -1,12 +1,10 @@
 #include <stdio.h>
 
-
-
 /**
  *
- *  * main - prints the phrase "Programming is like building a multilingual puzzle
+ *  *   main - main block
  *
- *   * Return: 0 if exited properly, non-zero otherwise
+ *   *   Return: 0
  *
  *    */
 
@@ -14,10 +12,8 @@ int main(void)
 
 {
 
-		puts("\"Programming is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle");
 
-			return (0);
+	return (0);
 
 }
-
-
