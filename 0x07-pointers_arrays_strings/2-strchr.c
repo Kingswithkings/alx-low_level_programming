@@ -2,22 +2,29 @@
 #include "main.h"
 
 /**
- * main - prints the largest of 3 integers
- * Return: 0
+ * _strchr - a function that locates a character in a string
+ *
+ * @s: pointer to our string array input
+ * @c: character to locate from input array
+ *
+ * Return: first occurence of charatcer or null if not found
  */
 
-int main(void)
+char *_strchr(char *s, char c)
 {
-	int a, b, c;
-	int largest;
-
-	a = 972;
-	b = -98;
-	c = 0;
-
-	largest = largest_number(a, b, c);
-
-	printf("%d is the largest number\n", largest);
-
-	return (0);
+	while (*s != '\0')
+	{
+		if (*s == c)
+			return (s);
+		s++;
+	}
+	/**
+	 * if c is '\0', you should return
+	 * the pointer to the '\0' of the
+	 * string s
+	 */
+	if (*s == c)
+		return (s);
+	/*return null if not found*/
+	return ('\0');
 }
