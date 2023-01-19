@@ -12,8 +12,23 @@ int op_add(int a, int b)
 	return (a + b);
 }
 
+
 /**
  * op_sub - gets the difference of @a and @b
+ *
+ * @a: input 1
+ * @b: input 2
+ *
+ * Return: difference of @a and @b
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+
+/**
+ * op_mul - multiplies @a and @b
  *
  * @a: input 1
  * @b: input 2
